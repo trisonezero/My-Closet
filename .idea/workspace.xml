@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bca4bb1-5f2d-4382-bd63-d307795878f6" name="Changes" comment="Added login / register functionality via Firebase Auth" />
+    <list default="true" id="6bca4bb1-5f2d-4382-bd63-d307795878f6" name="Changes" comment="Implemented React Routing.&#10;Connected to Firebase Realtime Database." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +14,27 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "trisonezero"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/trisonezero/My-Closet.git",
+    "accountId": "b917f3c8-cd5e-4247-b682-78c593d38b5e"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -35,6 +51,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Node.js.App.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.Home.jsx.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.Login.jsx.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -48,9 +65,9 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -61,6 +78,7 @@
       <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet\my-closet\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet" />
       <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet\src" />
     </key>
   </component>
@@ -87,7 +105,9 @@
       <workItem from="1735518512448" duration="131000" />
       <workItem from="1735518677773" duration="1764000" />
       <workItem from="1735526943938" duration="4646000" />
-      <workItem from="1735607566956" duration="9291000" />
+      <workItem from="1735607566956" duration="9412000" />
+      <workItem from="1735696020592" duration="18481000" />
+      <workItem from="1735770103554" duration="6550000" />
     </task>
     <task id="LOCAL-00001" summary="Added login / register functionality via Firebase Auth">
       <option name="closed" value="true" />
@@ -105,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735617449006</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented React Routing.&#10;Connected to Firebase Realtime Database.">
+      <option name="closed" value="true" />
+      <created>1735777187169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735777187169</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +142,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added login / register fucntionality via Firebase Auth" />
     <MESSAGE value="Added login / register functionality via Firebase Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added login / register functionality via Firebase Auth" />
+    <MESSAGE value="Implemented React Routing.&#10;Connected to Firebase Realtime Database." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented React Routing.&#10;Connected to Firebase Realtime Database." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
