@@ -1,17 +1,27 @@
-import { useState } from "react";
-import {auth, createAccount, logout} from "./firebase.js";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { auth, createAccount } from "./firebase.js";
+import { getDatabase, ref, set } from "firebase/database";
 
-
-export const Register = ({ onFormSwitch }) => {
+export const Register = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+
+    const navigate = useNavigate();
+    const db = getDatabase();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const userCredential = await createAccount(auth, email, password);
-            console.log("User logged in:", userCredential.user);
+            console.log("User registered:", userCredential.user);
+            await set(ref(db, 'users/' + userCredential.user.uid), {
+                username: username,
+                email: email,
+            });
+            navigate("/");
+
         } catch (error) {
             alert(error.message);
             console.error("Register error:", error.message);
@@ -49,10 +59,10 @@ export const Register = ({ onFormSwitch }) => {
                     name="password"
                 />
                 <button type="submit">Register</button>
-                <button onClick={() => logout(auth)} type="button">Logout</button>
             </form>
 
-            <button onClick={() => onFormSwitch('login')} className='link-btn'>Already have an account? Login here
+            <button onClick={() => navigate("/login")} className="link-btn">
+                Already have an account? Login here
             </button>
         </div>
     );

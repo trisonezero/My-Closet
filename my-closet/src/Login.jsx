@@ -1,21 +1,32 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { auth, loginEmailAndPassword, logout } from "./firebase.js";
 
-export const Login = ({ onFormSwitch }) => {
+export const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
             const userCredential = await loginEmailAndPassword(auth, email, password);
             console.log("User logged in:", userCredential.user);
+            navigate("/");
 
         } catch (error) {
             alert(error.message);
             console.error("Login error:", error.message);
         }
     };
+
+    const handleLogout = () => {
+        logout(auth);
+        navigate("/login");
+    };
+
+
+
     return (
         <div className="auth-form-container">
             <form onSubmit={handleSubmit} className="login-form">
@@ -38,10 +49,10 @@ export const Login = ({ onFormSwitch }) => {
                     name="password"
                 />
                 <button type="submit">Login</button>
-                <button onClick={() => logout(auth)} type="button">Logout</button>
+                <button onClick={handleLogout} type="button">Logout</button>
             </form>
 
-            <button onClick={() => onFormSwitch('register')} className='link-btn'>Register a new account</button>
+            <button onClick={() => navigate("/register")} className='link-btn'>Register a new account</button>
         </div>
     );
 };

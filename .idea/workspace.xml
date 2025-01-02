@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bca4bb1-5f2d-4382-bd63-d307795878f6" name="Changes" comment="Added login / register functionality via Firebase Auth" />
+    <list default="true" id="6bca4bb1-5f2d-4382-bd63-d307795878f6" name="Changes" comment="Added login / register functionality via Firebase Auth">
+      <change afterPath="$PROJECT_DIR$/my-closet/src/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my-closet/src/Layout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/My-Closet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/My-Closet.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/.firebaserc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/firebase.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/NoPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/src/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/src/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/src/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/Register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-closet/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +32,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -35,6 +57,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Node.js.App.jsx.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.Home.jsx.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.Login.jsx.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -48,9 +71,9 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -61,6 +84,7 @@
       <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet\my-closet\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet" />
       <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet\src" />
     </key>
   </component>
@@ -87,7 +111,9 @@
       <workItem from="1735518512448" duration="131000" />
       <workItem from="1735518677773" duration="1764000" />
       <workItem from="1735526943938" duration="4646000" />
-      <workItem from="1735607566956" duration="9291000" />
+      <workItem from="1735607566956" duration="9412000" />
+      <workItem from="1735696020592" duration="18481000" />
+      <workItem from="1735770103554" duration="5835000" />
     </task>
     <task id="LOCAL-00001" summary="Added login / register functionality via Firebase Auth">
       <option name="closed" value="true" />
