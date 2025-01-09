@@ -29,9 +29,6 @@ export const Register = () => {
           "Accessories",
           "Other",
         ],
-        tags: [],
-        clothings: [],
-        outfits: [],
       });
       navigate("/");
     } catch (error) {

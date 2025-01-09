@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { auth } from "./firebase.js";
-import { getDatabase, onValue, ref, set } from "firebase/database";
+import { getDatabase, onValue, ref, set, push, update } from "firebase/database";
 import { onAuthStateChanged } from "firebase/auth";
 import Clothing from "./Clothing.jsx";
 
@@ -88,15 +88,17 @@ const CreateClothing = () => {
       finalImg = img;
     }
 
-    let newClothings = [
-      ...(userData.clothings || []),
-      new Clothing(finalName, finalCategory, finalTags, finalImg),
-    ];
     try {
-      await set(ref(db, "users/" + auth.currentUser.uid), {
+      await update((ref(db, "users/" + auth.currentUser.uid)), {
         categories: newUserCats,
         tags: newUserTags,
-        clothings: newClothings,
+      });
+
+      await push((ref(db, "users/" + auth.currentUser.uid + "/clothings")), {
+        name: finalName,
+        category: finalCategory,
+        tags: finalTags,
+        img: finalImg,
       });
     } catch (error) {
       alert(error.message);
