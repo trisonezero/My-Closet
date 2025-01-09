@@ -73,7 +73,7 @@ const CreateClothing = () => {
     } else {
       newUserTags = [];
     }
-    let finalTags;
+    let finalTags = [];
     if (newFormatTags.length > 0) {
       newUserTags = [...newUserTags, ...newFormatTags];
       newUserTags = Array.from(new Set(newUserTags));
@@ -166,112 +166,135 @@ const CreateClothing = () => {
 
       reader.readAsDataURL(file);
     });
+
   }
 
   return (
-    <div className="clothing-form-container">
-      <form onSubmit={handleNewClothing} className="clothing-form">
-        <label htmlFor="clothingName">Clothing Name</label>
-        <input
-          value={clothingName}
-          onChange={(e) => setClothingName(e.target.value)}
-          type="text"
-          placeholder="Clothing Name"
-          id="clothingName"
-          name="clothingName"
-        />
-
-        <label htmlFor="category">Category</label>
-        <select
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          id="category"
-          name="category"
-        >
-          <option value="" disabled>
-            Select a category
-          </option>
-          {userData &&
-            userData.categories &&
-            userData.categories.map((cat, index) => (
-              <option key={index} value={cat}>
-                {cat}
-              </option>
-            ))}
-          <option value="custom">Custom Category</option>
-        </select>
-
-        {category === "custom" && (
-          <div>
-            <label htmlFor="customCategory">Custom Category</label>
-            <input
-              value={customCategory}
-              onChange={(e) => setCustomCategory(e.target.value)}
+      <div className="clothing-form-container">
+        <form onSubmit={handleNewClothing} className="clothing-form">
+          <label htmlFor="clothingName">Clothing Name</label>
+          <input
+              value={clothingName}
+              onChange={(e) => setClothingName(e.target.value)}
               type="text"
-              placeholder="Enter custom category"
-              id="customCategory"
-              name="customCategory"
-            />
-          </div>
-        )}
-        <label htmlFor="tags">Tags (Hold Ctrl / Cmd to select multiple)</label>
-        <select
-          multiple={true}
-          value={tags}
-          onChange={(e) => {
-            const selectedTags = Array.from(
-              e.target.selectedOptions,
-              (option) => option.value,
-            );
-            setTags(selectedTags);
-          }}
-          id="tags"
-          name="tags"
-        >
-          {userData &&
-            userData.tags &&
-            userData.tags.map((tag, index) => (
-              <option key={index} value={tag}>
-                {tag}
-              </option>
-            ))}
-        </select>
+              placeholder="Clothing Name"
+              id="clothingName"
+              name="clothingName"
+          />
 
-        <label htmlFor="tags">Add new tags (Comma seperated)</label>
-        <input
-          value={newTags}
-          onChange={(e) => setNewTags(e.target.value)}
-          type="text"
-          placeholder="New Tags"
-          id="newTags"
-          name="newTags"
-        />
+          <label htmlFor="category">Category</label>
+          <select
+              value={category}
+              onChange={(e) => setCategory(e.target.value)}
+              id="category"
+              name="category"
+          >
+            <option value="" disabled>
+              Select a category
+            </option>
+            {userData &&
+                userData.categories &&
+                userData.categories.map((cat, index) => (
+                    <option key={index} value={cat}>
+                      {cat}
+                    </option>
+                ))}
+            <option value="custom">Custom Category</option>
+          </select>
 
-        <button id="imgInsert" type="button" onClick={imgInsert}>
-          Insert Image
-        </button>
-        <input
-          onChange={imgChange}
-          type="file"
-          id="img"
-          name="img"
-          style={{ display: "none" }}
-          ref={fileRef}
-          accept="image/*"
-        />
-        {img && (
-          <div>
-            <p>Preview:</p>
-            <img
-              src={img}
-              alt="Uploaded Preview"
-              style={{ maxWidth: "100%" }}
-            />
-          </div>
-        )}
-        <button id='create-clothing' type="submit">Create Clothing</button>
-      </form>
-    </div>
+          {category === "custom" && (
+              <div>
+                <label htmlFor="customCategory">Custom Category</label>
+                <input
+                    value={customCategory}
+                    onChange={(e) => setCustomCategory(e.target.value)}
+                    type="text"
+                    placeholder="Enter custom category"
+                    id="customCategory"
+                    name="customCategory"
+                />
+              </div>
+          )}
+          <label htmlFor="tags">Tags (Hold Ctrl / Cmd to select multiple)</label>
+          <select
+              multiple={true}
+              value={tags}
+              onChange={(e) => {
+                const selectedTags = Array.from(
+                    e.target.selectedOptions,
+                    (option) => option.value,
+                );
+                setTags(selectedTags);
+              }}
+              id="tags"
+              name="tags"
+          >
+            {userData &&
+                userData.tags &&
+                userData.tags.map((tag, index) => (
+                    <option key={index} value={tag}>
+                      {tag}
+                    </option>
+                ))}
+          </select>
+
+          <label htmlFor="tags">Add new tags (Comma seperated)</label>
+          <input
+              value={newTags}
+              onChange={(e) => setNewTags(e.target.value)}
+              type="text"
+              placeholder="New Tags"
+              id="newTags"
+              name="newTags"
+          />
+
+          <button id="imgInsert" type="button" onClick={imgInsert}>
+            Insert Image
+          </button>
+          <input
+              onChange={imgChange}
+              type="file"
+              id="img"
+              name="img"
+              style={{display: "none"}}
+              ref={fileRef}
+              accept="image/*"
+          />
+          {img && (
+              <div>
+                <p>Preview:</p>
+                <img
+                    src={img}
+                    alt="Uploaded Preview"
+                    style={{maxWidth: "100%"}}
+                />
+              </div>
+          )}
+          <button id='create-clothing' type="submit">Create Clothing</button>
+        </form>
+        <div className="clothings-display">
+          <h1>My Clothes</h1>
+            <ul>
+              {userData && userData.clothings ? (Object.keys(userData.clothings).map((key) => (
+                  <li key={key}>
+                    <strong>{userData.clothings[key].name}</strong> - {userData.clothings[key].category}
+                    <br/>
+                    <p>{userData.clothings[key].tags ? userData.clothings[key].tags.join(', ') : "No tags"}</p>
+                    <br/>
+                    <img
+                        src={userData.clothings[key].img}
+                        alt="Uploaded Preview"
+                        style={{maxWidth: "100%"}}
+                    />
+                  </li>
+              ))) : (
+              <p>
+                Your closet is empty!
+              </p>)}
+            </ul>
+        </div>
+      </div>
+
   );
 };
 
