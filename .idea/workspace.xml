@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6bca4bb1-5f2d-4382-bd63-d307795878f6" name="Changes" comment="Clothing creation and storing to database">
+    <list default="true" id="6bca4bb1-5f2d-4382-bd63-d307795878f6" name="Changes" comment="Bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/Clothing.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/CreateClothing.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/Register.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my-closet/src/firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/my-closet/src/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-closet/src/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +31,12 @@
     &quot;assignee&quot;: &quot;trisonezero&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/trisonezero/My-Closet.git&quot;,
-    &quot;accountId&quot;: &quot;b917f3c8-cd5e-4247-b682-78c593d38b5e&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/trisonezero/my-closet.git",
+    "accountId": "b917f3c8-cd5e-4247-b682-78c593d38b5e"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -61,34 +51,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Node.js.App.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.Home.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.Login.jsx.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/Documents/GitHub/My-Closet&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Node.js.App.jsx.executor": "Run",
+    "Node.js.Home.jsx.executor": "Run",
+    "Node.js.Login.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Final",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/admin/Documents/Temp MyCloset/my-closet",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\admin\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.3.1.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\Documents\GitHub\My-Closet\my-closet\my-closet\src\components" />
@@ -132,6 +122,7 @@
       <workItem from="1735948755752" duration="12526000" />
       <workItem from="1736032741435" duration="953000" />
       <workItem from="1736394016788" duration="4590000" />
+      <workItem from="1736459355830" duration="1282000" />
     </task>
     <task id="LOCAL-00001" summary="Added login / register functionality via Firebase Auth">
       <option name="closed" value="true" />
@@ -181,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736033710044</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Bug fix">
+      <option name="closed" value="true" />
+      <created>1736459481208</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736459481208</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +192,8 @@
     <MESSAGE value="Implemented React Routing.&#10;Connected to Firebase Realtime Database." />
     <MESSAGE value="Implemented React Routing and connected to Firebase Realtime Database." />
     <MESSAGE value="Clothing creation and storing to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clothing creation and storing to database" />
+    <MESSAGE value="Bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

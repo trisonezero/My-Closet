@@ -19,13 +19,13 @@ const firebaseApp = initializeApp({
 });
 
 const db = getDatabase();
-if (location.hostname === "localhost") {
-  // Point to the RTDB emulator running on localhost.
-  connectDatabaseEmulator(db, "127.0.0.1", 9000);
-}
+// if (location.hostname === "localhost") {
+//   // Point to the RTDB emulator running on localhost.
+//   connectDatabaseEmulator(db, "127.0.0.1", 9000);
+// }
 
 export const auth = getAuth(firebaseApp);
-connectAuthEmulator(auth, "http://localhost:9099");
+// connectAuthEmulator(auth, "http://localhost:9099");
 
 export const loginEmailAndPassword = async (auth, email, password) => {
   try {
