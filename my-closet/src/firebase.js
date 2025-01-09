@@ -3,7 +3,6 @@ import {
   connectAuthEmulator,
   createUserWithEmailAndPassword,
   getAuth,
-  onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
@@ -24,9 +23,6 @@ if (location.hostname === "localhost") {
   // Point to the RTDB emulator running on localhost.
   connectDatabaseEmulator(db, "127.0.0.1", 9000);
 }
-
-// Initialize Realtime Database and get a reference to the service
-const database = getDatabase(firebaseApp);
 
 export const auth = getAuth(firebaseApp);
 connectAuthEmulator(auth, "http://localhost:9099");
@@ -58,12 +54,4 @@ export const logout = (auth, navigate) => {
     .catch((error) => {
       console.error("Logout error:", error.message);
     });
-};
-
-export const checkLoggedIn = (auth, navigate) => {
-  onAuthStateChanged(auth, (user) => {
-    if (!user) {
-      navigate("/login");
-    }
-  });
 };

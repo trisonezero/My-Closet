@@ -1,14 +1,9 @@
 import React from "react";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { auth, logout } from "./firebase.js";
 
 const Layout = () => {
   const navigate = useNavigate();
-
-  const linkStyle = {
-    color: "white",
-    textDecoration: "none",
-  };
 
   const handleLogout = () => {
     logout(auth, navigate);
@@ -16,33 +11,12 @@ const Layout = () => {
 
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/" style={linkStyle}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/login" style={linkStyle}>
-              Login
-            </Link>
-          </li>
-          <li>
-            <Link to="/register" style={linkStyle}>
-              Register
-            </Link>
-          </li>
-          <li>
-            <Link to="/createClothing" style={linkStyle}>
-              Create Clothing
-            </Link>
-          </li>
-          <button onClick={handleLogout} type="button">
-            Logout
-          </button>
-        </ul>
-      </nav>
+      <div id="navbar">
+        <h1 id="title">My Closet</h1>
+        <h2 id="logout" onClick={handleLogout}>
+          Logout
+        </h2>
+      </div>
       <Outlet />
     </div>
   );

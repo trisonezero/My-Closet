@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Login } from "./Login.jsx";
 import { Register } from "./Register.jsx";
-import CreateClothing from "./CreateClothing.jsx";
 import Home from "./Home.jsx";
 import NoPage from "./NoPage.jsx";
 import Layout from "./Layout.jsx";
@@ -17,7 +16,6 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="register" element={<Register />} />
-            <Route path="createclothing" element={<CreateClothing />} />
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>

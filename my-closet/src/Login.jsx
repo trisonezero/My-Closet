@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { auth, loginEmailAndPassword } from "./firebase.js";
 
 export const Login = () => {
-  const [userData, setUserData] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
